@@ -1,7 +1,8 @@
 def selectionSort(lst):
-    for i in range(len(lst) - 1):
+    length_of_list = len(lst)
+    for i in range(length_of_list - 1):
         imin = i
-        for j in range(i+1, len(lst)):
+        for j in range(i + 1, length_of_list):
             if lst[j] < lst[imin]:
                 imin = j
         temp = lst[i]
